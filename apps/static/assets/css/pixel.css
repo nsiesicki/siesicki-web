@@ -744,6 +744,10 @@ progress {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px; } }
 
+@media (min-width: 1400px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1360px; } }
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -4016,7 +4020,7 @@ textarea.form-control-lg {
 
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  /*top: 100%;*/
   z-index: 1000;
   display: none;
   min-width: 10rem;
@@ -4437,7 +4441,8 @@ textarea.form-control-lg {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none; }
+  list-style: none;
+  margin-left: 10%; }
   .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0; }
@@ -15847,7 +15852,8 @@ textarea.form-control-lg {
   font-weight: 600;
   text-transform: uppercase; }
   .navbar-brand img {
-    height: 37px;
+    /*height: 37px;*/
+    height: 7rem;
     max-width: none; }
 
 .navbar-dark .navbar-brand-light {
@@ -15991,7 +15997,8 @@ textarea.form-control-lg {
       padding-bottom: 1rem;
       margin-bottom: 1rem; }
     .navbar-collapse .collapse-brand img {
-      height: 37px; }
+      /*height: 37px;*/
+      height: 4rem; }
     .navbar-collapse .collapse-close {
       text-align: right; }
   .navbar-collapse.collapsing,
@@ -17772,7 +17779,8 @@ label {
     opacity: .5; }
 
 .nav-tabs .nav-item {
-  margin-bottom: 0; }
+  margin-bottom: 0; 
+}
 
 .nav-tabs .nav-link {
   border: 0;
@@ -18601,16 +18609,21 @@ label {
 
 .bootstrap-big-icon {
   position: absolute;
-  opacity: .05;
-  transform: rotate(17deg); }
+  opacity: .4;
+  object-fit: contain;
+  width: 20vw;
+  height:  auto;
+  transform: rotate(0deg); }
   @media (min-width: 992px) {
     .bootstrap-big-icon {
-      right: -20%;
-      bottom: 6%; } }
+      /*right: -20%;*/
+      right: 10%;
+      bottom: 40%; } }
   @media (min-width: 1200px) {
     .bootstrap-big-icon {
-      right: -10%;
-      bottom: 6%; } }
+      /*right: -10%;*/
+      right: 5%;
+      bottom: 40%; } }
 
 /**
  * = Typography
@@ -18626,11 +18639,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 
 p,
 ol li,
-ul li {
+ul li, {
   font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.6; }
+
+.navbar-collapse {
+    font-size: 1.3rem;
+    font-weight: 600;}}
 
 a,
 .text-action {
@@ -19512,3 +19529,8 @@ blockquote {
   pointer-events: none; }
 
 /*# sourceMappingURL=pixel.css.map */
+
+.footer-logo-ns {
+  width: 100%;
+  height:  auto;
+}
