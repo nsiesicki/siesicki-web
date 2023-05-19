@@ -19534,3 +19534,43 @@ blockquote {
   width: 100%;
   height:  auto;
 }
+
+.vision{
+  text-align: center;
+  font-size: 3.2rem;
+  font-family: Papyrus;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-bottom: 10%;
+}
+
+.values-img {
+  margin-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+}
+
+.ns_values_row{
+  justify-content: center;
+}
+
+.ns_values_1{
+  background-color: #06357a;
+  color: #bacbe6;
+  width: 100%;
+  height: 100%;
+}
+
+.ns_values_2{
+  background-color: #36205d;
+  color: #bacbe6;
+  width: 100%;
+  height: 100%;
+}
+
+.ns-values-title{
+  color: #fff;
+}
